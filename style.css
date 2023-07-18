@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading , Time display , Time counts , Start and Reset Buttons */
+
+.heading h3{
+    text-align: center;
+    margin: 30px 40px;
+    font-size: 30px;
+}
+.heading p{
+    text-align: center;
+    margin: 40px;
+    font-size: 25px;
+}
+#bananacount{
+    color: red;
+}
+#mangocount{
+    color: yellow;
+}
+#applecount{
+    color: springgreen;
+}
+#timeshow{
+    color:258;
+    font-size: 30px;
+}
+.timebtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start{
+    margin: 0 2%;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(162, 160, 160);
+    cursor: pointer;
+}
+#reset{
+    margin: 0 2%;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(162, 160, 160);
+    cursor: pointer;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .img12 button{
+    margin-top: 74px;
+}
+.container .img13 button{
+    margin-top: 20px;
+}
+.container .img14 button{
+    margin-top: 70px;
+}
+.container .img1 button{
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(162, 160, 160);
+    cursor: pointer;
+}
+
+/* Media quiries for 400px */
+
+@media screen and (max-width:400px) {
+    .container .img1 img{
+        width: 250px;
+        margin-top: 40px;
+    }
+    .heading h3{
+        font-size: 20px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .container{
+        margin-bottom: 50px;
+    }
+    #resetbtn{
+        margin: 5% 40%;
+    }
+    #timeshow{
+        font-size: 20px;
+    }
+}
+
+/* Media Quiries for 600px to 800px */
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .container img{
+        margin-top: 50px;
+    }
+    #resetbtn{
+        margin: 2% 44%;
+    }
+}

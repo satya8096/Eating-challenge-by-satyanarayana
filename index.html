@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating Challenge</title>
+
+    <!-- Google Font Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&family=Itim&family=Kalam:wght@400;700&family=Libre+Baskerville&family=Merriweather&family=Niconne&family=Oleo+Script&family=Shrikhand&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS code  link -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="heading">
+        <!-- Heading and message Tags -->
+
+        <h3>Eating Challenge</h3>
+        <p id="para">You Eat <span id="bananacount">0</span> Banana's , <span id="mangocount">0</span> Mangoes , <span id="applecount">0</span> Apples.</p>
+        <p id="time">Time Remaining : <span id="timeshow" class="timeshow">01 : 00</span></p>
+
+        <!-- Timer Buttons -->
+
+        <div class="timebtns">
+            <button onclick="btnClick()" id="start">Start</button>
+            <button onclick="resettime()" id="reset">Reset</button>
+        </div>
+        <div class="container">
+
+            <!-- Banana Container -->
+
+            <div class="img1 img12">
+                <img src="./Images/l-intro-1673458653.jpg" alt="Banana" width="300px">
+                <button id="banana">Eat Banana</button>
+            </div>
+
+            <!-- Mango container -->
+
+            <div class="img1 img13">
+                <img src="./Images/shutterstock_1905871249-1.avif" alt="Banana" width="300px">
+                <button id="mango">Eat Mango</button>
+            </div>
+
+            <!-- Apple Container -->
+
+            <div class="img1 img14">
+                <img src="./Images/16438126-0-image-a-8_1563971392042.jpg" alt="Banana" width="300px">
+                <button id="apple">Eat Apple</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
